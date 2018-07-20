@@ -29,6 +29,7 @@ public class UserResource {
 	@GET
 	@Produces("application/json")
 	public Users getAllUsers() {
+		System.out.println("UserResource.getAllUsers()");
 		Users users = new Users();
 		users.setUsers(new ArrayList<>(DB.values()));
 		return users;
